@@ -1,0 +1,26 @@
+<section class="buy-grid container" *ngIf="product">
+  <header class="header">
+    <h1>{{product.name}}</h1>
+  </header>
+  <div class="hero-image-wrapper">
+    <img src="{{product.image}}" class="hero-image-element" style="height: 400px;width: 400px;" alt="alt">
+  </div>
+  <div class="specs-table">
+    <h4>{{product.brand}}</h4>
+    <div class="specs-table-row">
+      <div class="spec-table-description"> {{product.description}}</div>
+    </div>
+    <div class="specs-table-row">
+      <div class="spec-table-label">{{ 'PRODUCT.COLOR' | translate }}</div>
+      <div class="spec-table-description"> {{product.color}}</div>
+    </div>
+    <div class="specs-table-row">
+      <div class="spec-table-label">{{ 'PRODUCT.PRICE' | translate }}</div>
+      <div class="spec-table-description"> {{product.price | currency: 'US'}}</div>
+    </div>
+  </div>
+  <div class="">
+    <input type = "hidden" #id value="{{product.id}}">
+    <button class="btn btn-primary btn-large btn-full" (click) ="addCart(id)">{{ 'PRODUCT.ADD_CART' | translate }}</button>
+  </div>
+</section>

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "name": "Rahul",
+    "password": "Passw0rd",
+    "email": "rahul@gmail.com",
+    "mobile": "9873443210",
+    "address": "plot 123, jaipur",
+    "image": ""
+  },
+  {
+    "id": "2",
+    "name": "Rakesh",
+    "password": "Passw0rd",
+    "email": "rakesh@gmail.com",
+    "mobile": "9876443210",
+    "address": "plot 321, ajmer",
+    "image": ""
+  },
+  {
+    "id": "3",
+    "name": "Riya",
+    "password": "Passw0rd",
+    "email": "riya@gmail.com",
+    "mobile": "9898543210",
+    "address": "plot 123, bikaner",
+    "image": ""
+  },
+  {
+    "id": "4",
+    "name": "Jack",
+    "password": "Passw0rd",
+    "email": "jack@gmail.com",
+    "mobile": "9887543210",
+    "address": "whitefield 123 , atlanta",
+    "image": ""
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "HEADER":
+  {
+    "SUPPORT_EMAIL": "Support@Anytime.com",
+    "SERVICES": " Services Avaliable across multiple regions.",
+    "FASHION_STORE": "Fashion Store",
+    "LOGIN":"Log In",
+    "LOG_OUT":"Log Out",
+    "SEARCH_PRODUCTS":"Search for products..."
+  },
+  "FOOTER":
+  {
+    "COPYRIGHT":"Copyright 2021"
+  },
+  "PRODUCT":
+  {
+    "Product":"Product",
+    "PRICE":"Price",
+    "COLOR":"Color",
+    "DESCRIPTION":"Description",
+    "ADD_CART":"Add to Cart",
+    "QUANTITY":"Quantity",
+    "SUBTOTAL":"Subtotal",
+    "TAX":"Tax",
+    "SHIPPING":"Shipping",
+    "TOTAL":"Total",
+    "CHECKOUT":"Checkout",
+    "CONTINUE":"Continue Shopping",
+    "NO_DATA": "No data to display"
+  },
+  "USER":
+  {
+    "FULL_NAME":"Full name",
+    "EMAIL":"Email",
+    "OPTIONAL":"(Optional)",
+    "ADDRESS":"Address",
+    "ADDRESS_DETAIL":"Address Details",
+    "COUNTRY":"Country",
+    "STATE":"State",
+    "ZIP":"Zip",
+    "CONTINUE":"Continue Checkout"
+  },
+  "VALIDATION":
+  {
+    "NAME":"Please enter your name.",
+    "NAME_LENGTH":"Name must be longer than 5 characters.",
+    "ADDRESS":" Please enter your shipping address.",
+    "COUNTRY":"Please select a valid country.",
+    "STATE":"Please provide a valid state.",
+    "ZIP":" Zip code required."
+  }
+}

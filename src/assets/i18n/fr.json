@@ -1,0 +1,52 @@
+{
+  "HEADER":
+  {
+    "SUPPORT_EMAIL": "Support@Anytime.com",
+    "SERVICES":"Services disponibles dans plusieurs régions.",
+    "FASHION_STORE": "Magasin de mode",
+    "LOGIN":"connexion",
+    "LOG_OUT":"Se déconnecter",
+    "SEARCH_PRODUCTS":"Rechercher des produits..."
+  },
+  "FOOTER":
+  {
+    "COPYRIGHT":"Droits d'auteur 2021"
+  },
+  "PRODUCT":
+  {
+    "Product":"Produit",
+    "PRICE":"LE PRIX",
+    "COLOR":"Couleur",
+    "DESCRIPTION":"La description",
+    "ADD_CART":"Ajouter au chariot",
+    "QUANTITY":"Quantité",
+    "SUBTOTAL":"Total",
+    "TAX":"Impôt",
+    "SHIPPING":"Expédition",
+    "TOTAL":"Le total",
+    "CHECKOUT":"Vérifier",
+    "CONTINUE":"Continuer vos achats",
+    "NO_DATA":"AUCUNE DONNÉE À AFFICHER"
+  },
+  "USER":
+  {
+    "FULL_NAME":"Full name",
+    "EMAIL":"Email",
+    "OPTIONAL":"(Optional)",
+    "ADDRESS":"Address",
+    "ADDRESS_DETAIL":"Address Details",
+    "COUNTRY":"Country",
+    "STATE":"State",
+    "ZIP":"Zip",
+    "CONTINUE":"Continue Checkout"
+  },
+  "VALIDATION":
+  {
+    "NAME":"Please enter your name.",
+    "NAME_LENGTH":"Name must be longer than 5 characters.",
+    "ADDRESS":" Please enter your shipping address.",
+    "COUNTRY":"Please select a valid country.",
+    "STATE":"Please provide a valid state.",
+    "ZIP":" Zip code required."
+  }
+}

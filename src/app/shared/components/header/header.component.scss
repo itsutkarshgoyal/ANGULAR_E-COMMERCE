@@ -1,0 +1,272 @@
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) */
+/* Large devices (desktops, 992px and up) */
+/* Extra large devices (large desktops, 1200px and up) */
+/* Medium devices (tablets, 768px and up) */
+/* .mobiHeader .menuActive~.overlay {
+    opacity: 1;
+    width: 100%;
+} */
+.btn {
+	.bx {
+		vertical-align: inherit;
+		margin-top: -3px;
+		font-size: 1.15rem;
+	}
+	font-size: 1rem;
+	padding: 0.5rem 0.75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: 0.25rem;
+}
+.form-control {
+	height: calc(2.5rem + 2px);
+	padding: 0.5rem 1.5rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: 0.3rem;
+}
+.bx.icon-single {
+	font-size: 1.5rem;
+}
+.form-inline {
+	.form-control {
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+	.btn {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+}
+.sub-menu.navbar-light {
+	.navbar-nav {
+		.active {
+			>.nav-link {
+				border-bottom: 3px solid #007bff;
+				color: #007bff;
+			}
+		}
+		.nav-link.active {
+			border-bottom: 3px solid #007bff;
+			color: #007bff;
+		}
+		.nav-link.show {
+			border-bottom: 3px solid #007bff;
+			color: #007bff;
+		}
+		.show {
+			>.nav-link {
+				border-bottom: 3px solid #007bff;
+				color: #007bff;
+			}
+		}
+	}
+}
+.navbar {
+	.navbar-toggler {
+		border: none;
+	}
+	padding: 1rem;
+}
+.navbar-light {
+	.navbar-toggler {
+		&:focus {
+			outline: none;
+		}
+	}
+}
+.main-menu {
+	position: relative;
+	z-index: 3;
+}
+.sub-menu {
+	position: relative;
+	z-index: 2;
+	padding: 0 1rem;
+}
+.navbar.bg-light {
+	background: #fff !important;
+	box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.user-dropdown {
+	.nav-link {
+		padding: 0.15rem 0;
+	}
+	.dropdown-menu {
+		left: auto;
+		right: 0;
+	}
+}
+#sidebar {
+	background: #fff;
+	height: 100%;
+	left: -100%;
+	top: 0;
+	bottom: 0;
+	overflow: auto;
+	position: fixed;
+	transition: 0.4s ease-in-out;
+	width: 84%;
+	z-index: 5001;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+	padding: 1.25rem 1rem 1rem;
+	.sidebar-header {
+		background: #fff;
+		border-bottom: 1px solid #e4e4e4;
+		padding-bottom: 1.5rem;
+	}
+	ul.components {
+		padding: 20px 0;
+		border-bottom: 1px solid #e4e4e4;
+		margin-bottom: 40px;
+	}
+	ul {
+		p {
+			color: #fff;
+			padding: 10px;
+		}
+		li {
+			a {
+				padding: 10px 16px;
+				font-size: 1.1em;
+				display: block;
+				color: #000;
+				&:hover {
+					color: #7386d5;
+					background: #fff;
+				}
+			}
+		}
+		li.active {
+			>a {
+				color: #007bff;
+				background: #e6f2ff;
+				border-radius: 6px;
+			}
+		}
+	}
+	a[aria-expanded="true"] {
+		color: #007bff;
+		background: #e6f2ff;
+		border-radius: 6px;
+	}
+	.links {
+		.dropdown-toggle {
+			&::after {
+				display: block;
+				position: absolute;
+				top: 50%;
+				right: 20px;
+				transform: translateY(-50%);
+			}
+		}
+	}
+	ul.social-icons {
+		li {
+			a {
+				font-size: 24px;
+			}
+		}
+	}
+}
+#sidebar.active {
+	left: 0;
+}
+a[data-toggle="collapse"] {
+	position: relative;
+}
+section {
+	padding: 6rem;
+	background: #e4e4e4;
+	margin-bottom: 30px;
+	position: relative;
+	z-index: 1;
+}
+.overlay {
+	background: rgba(0, 0, 0, 0.7);
+	height: 100vh;
+	left: 0;
+	position: fixed;
+	top: 0;
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	z-index: -1;
+	width: 100%;
+	opacity: 0;
+}
+.overlay.visible {
+	opacity: 1;
+	z-index: 5000;
+}
+ul.social-icons {
+	list-style-type: none;
+	padding-left: 0;
+	margin-bottom: 0;
+	li {
+		display: inline-block;
+		margin-right: 0px;
+		margin-bottom: 0;
+	}
+}
+.utility-nav {
+	background: #e4e4e4;
+	padding: 0.5rem 1rem;
+	p {
+		margin-bottom: 0;
+	}
+}
+.search-bar {
+	position: relative;
+	z-index: 2;
+	box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.1);
+	.form-control {
+		width: calc(100% - 45px);
+	}
+}
+.avatar {
+	border-radius: 50%;
+	width: 4.5rem;
+	height: 4.5rem;
+	margin-right: 8px;
+}
+.avatar.avatar-xs {
+	width: 2.25rem;
+	height: 2.25rem;
+}
+@media (min-width: 768px) {
+	.form-inline {
+		.form-control {
+			width: 210px;
+		}
+	}
+	.sub-menu {
+		padding: 0 1rem;
+	}
+	.sub-menu.navbar-expand-md {
+		.navbar-nav {
+			.nav-link {
+				padding: 1rem 1.5rem;
+			}
+		}
+	}
+}
+@media (min-width: 992px) {
+	.form-inline {
+		.form-control {
+			width: 440px;
+		}
+	}
+}
+// @media (min-width: 1200px) {
+// 	.form-inline {
+// 		.form-control {
+// 			width: 600px;
+// 		}
+// 	}
+// }
+
+.btn .badge {
+    position: relative;
+    top: -11px;
+}

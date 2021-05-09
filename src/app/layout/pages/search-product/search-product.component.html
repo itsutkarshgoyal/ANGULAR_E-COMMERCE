@@ -1,0 +1,16 @@
+<app-slider></app-slider>
+<div class="card-group" style="padding-left: 100px;">
+  <div *ngFor="let product of products">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{ product.name }}</h5>
+        <div><img class="logo" src="{{product.image}}" width="250" height="250" alt=""></div>
+        <p class="card-text brand" style="margin-bottom:0px;">{{ product.brand }}</p>
+        <p class="card-text">{{ product.name }}</p>
+        <p class="card-text">{{ 'PRODUCT.PRICE' | translate }} : ${{ product.price }}</p>
+        <button class="btn btn-secondary fas fa-info-circle" (click)="viewProduct(product.id)"></button>
+        <button class="btn btn-secondary fas fa-shopping-cart" style="float: right;" (click)="addCart(product.id)"></button>
+      </div>
+    </div>
+  </div>
+</div>

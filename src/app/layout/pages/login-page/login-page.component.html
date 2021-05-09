@@ -1,0 +1,14 @@
+ <div class="container">
+  <div class="box">
+      <h1>Sign In</h1>
+      <div class="row">
+          <input type="text" #email placeholder="Email">
+      </div>
+      <div class="row">
+          <input type="password" #password placeholder="Password"> 
+      </div>
+      <div class="row">
+          <a id="login" (click)="submitLoginForm(email, password)">Login</a>
+      </div>                 
+  </div>
+</div>

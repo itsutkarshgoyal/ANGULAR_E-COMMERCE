@@ -15,7 +15,15 @@
     "lib": [
       "es2018",
       "dom"
+    ],
+    "paths": {
+    "@eway/core": [
+      "src/app/core/public_api.ts"
+    ],
+    "@eway/shared": [
+      "src/app/shared/public_api.ts"
     ]
+  }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false

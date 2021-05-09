@@ -1,0 +1,18 @@
+.card {
+  margin-top: 20px;
+  margin-left: 100px;
+  box-shadow: 2px 4px 8px darkolivegreen;
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+  .card-body {
+    .card-title {
+      text-shadow: 1px 1px yellow;
+    }
+    .brand {
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-bottom: 80px;
+    }
+  }
+}

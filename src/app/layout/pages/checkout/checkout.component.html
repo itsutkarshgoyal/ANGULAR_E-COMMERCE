@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="#">
+</head>
+
+<body class="bg-light">
+  <br>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-8 order-md-1">
+        <h4 class="mb-3">{{ 'USER.ADDRESS_DETAIL' | translate }}</h4>
+        <form class="needs-validation" #userForm="ngForm" (ngSubmit)="output()" novalidate>
+          <div class=" mb-3">
+            <label for="lastName">{{ 'USER.FULL_NAME' | translate }}</label>
+            <input type="text"
+             class="form-control"
+              id="name" 
+              [(ngModel)]="name"
+               required
+               minlength="5"
+               #nameVar="ngModel"
+               [ngClass]="{
+                'is-invalid': (nameVar.touched || nameVar.dirty) && !nameVar.valid
+              }"
+              name="name" placeholder="" value=""
+              required/>
+            <div class="invalid-feedback" *ngIf="nameVar.errors?.required">
+              {{ 'VALIDATION.NAME' | translate }}
+            </div>
+            <div class="invalid-feedback" *ngIf="nameVar.errors?.minlength">
+              {{ 'VALIDATION.NAME_LENGTH' | translate }}
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="email">{{ 'USER.EMAIL' | translate }} <span class="text-muted">{{ 'USER.OPTIONAL' | translate }}</span></label>
+            <input type="email"
+                   class="form-control"
+                    id="email"
+                     [(ngModel)]="email"
+                      name="email"
+              placeholder="you@example.com">
+          </div>
+
+          <div class="mb-3">
+            <label for="address">{{ 'USER.ADDRESS' | translate }}</label>
+            <input type="text"
+                   class="form-control"
+                   id="address" [(ngModel)]="address"
+                   name="address"
+                   #addressVar="ngModel"
+                   [ngClass]="{
+                    'is-invalid': (addressVar.touched || addressVar.dirty) && !addressVar.valid
+                  }"
+                   placeholder="1234 Main St" required>
+            <div class="invalid-feedback" *ngIf="addressVar.errors?.required">
+              {{ 'VALIDATION.ADDRESS' | translate }}
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-5 mb-3">
+              <label for="country">{{ 'USER.COUNTRY' | translate }}</label>
+              <input type="text" 
+                 class="form-control" id="country"
+                  [(ngModel)]="country" name="country"
+                  #countryVar="ngModel"
+                  [ngClass]="{
+                   'is-invalid': (countryVar.touched || countryVar.dirty) && !countryVar.valid
+                 }"
+                placeholder="India" required>
+              <div class="invalid-feedback" *ngIf="countryVar.errors?.required">
+                {{ 'VALIDATION.COUNTRY' | translate }}
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="state">{{ 'USER.STATE' | translate }}</label>
+              <input type="text" class="form-control" 
+              id="state" [(ngModel)]="state" name="state"
+                placeholder="Rajasthan"
+                #stateVar="ngModel"
+                  [ngClass]="{
+                   'is-invalid': (stateVar.touched || stateVar.dirty) && !stateVar.valid
+                 }"
+                 required>
+              <div class="invalid-feedback" *ngIf="stateVar.errors?.required">
+                {{ 'VALIDATION.STATE' | translate }}
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="zip">{{ 'USER.ZIP' | translate }}</label>
+              <input type="text" class="form-control"  onkeypress="return !(event.charCode > 31 && (event.charCode < 48 || event.charCode > 57))"
+              id="zip" [(ngModel)]="zip" name="zip" ng-maxlength="9"
+              #zipVar="ngModel"
+                  [ngClass]="{
+                   'is-invalid': (zipVar.touched || zipVar.dirty) && !zipVar.valid
+                 }"
+              placeholder="" required>
+              <div class="invalid-feedback" *ngIf="zipVar.errors?.required">
+                {{ 'VALIDATION.ZIP' | translate }}
+              </div>
+            </div>
+          </div>
+          <hr class="mb-4">
+          <button class="btn btn-primary btn-lg btn-block"
+           type="submit"
+           [title]="
+              userForm.valid
+                ? 'Save your entered data'
+                : 'Disabled until the form data is valid'
+            "
+            [disabled]="!userForm.valid">{{ 'USER.CONTINUE' | translate }}</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
