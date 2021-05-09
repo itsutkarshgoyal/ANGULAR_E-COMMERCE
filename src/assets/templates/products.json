@@ -5,7 +5,7 @@
     "image":  "./assets/images/tshirt2.jpeg",
     "brand": "Casual",
     "color": "Pink",
-    "price": 1500,
+    "price": 15,
     "description": "The smooth feel of premium touch. In a playful print."
 
   },
@@ -15,7 +15,7 @@
     "image":  "./assets/images/t-men3.jpg",
     "brand": "Pantaloon",
     "color": "White",
-    "price": 2000,
+    "price": 20,
     "description": "The smooth feel of premium touch. In a playful print."
 
   },
@@ -25,7 +25,7 @@
     "image":  "./assets/images/t-women2.jpg",
     "brand": "Pantaloon",
     "color": "White",
-    "price": 2500,
+    "price": 25,
     "description": "The smooth feel of premium touch. In a playful print."
   },
   {
@@ -34,7 +34,7 @@
     "image":  "./assets/images/t-men2.jpg",
     "brand": "HRX",
     "color": "Grey",
-    "price": 2000,
+    "price": 20,
     "description": "The smooth feel of premium touch. In a playful print."
   },
   {
@@ -43,7 +43,7 @@
     "image":  "./assets/images/tshirt4.jpeg",
     "brand": "Decathlon",
     "color": "Black",
-    "price": 1000,
+    "price": 10,
     "description": "The smooth feel of premium touch. In a playful print."
   },
   {
@@ -52,7 +52,7 @@
     "brand": "Classic",
     "image":  "./assets/images/tshirt3.jpeg",
     "color": "Black",
-    "price": 800,
+    "price": 8,
     "description":  "Revisit your childhood in these Question Mid Men's Basketball Shoes sugared up with Candy Land accents. Their B-ball roots honor legendary scoring champion Allen Iverson. Then they get a little sweet with a quilted ice cream cone design that wraps around the ankle."
   },
   {
@@ -61,7 +61,7 @@
     "image":  "./assets/images/shoe3.jfif",
     "brand": "Woodland",
     "color": "Black",
-    "price": 4500,
+    "price": 45,
     "description":  "Revisit your childhood in these Question Mid Men's Basketball Shoes sugared up with Candy Land accents. Their B-ball roots honor legendary scoring champion Allen Iverson. Then they get a little sweet with a quilted ice cream cone design that wraps around the ankle."
   },
   {
@@ -70,7 +70,7 @@
     "brand": "Rebook",
     "image":  "./assets/images/shoe1.jpeg",
     "color": "Navy Blue",
-    "price": 5000,
+    "price": 50,
     "description":  "Revisit your childhood in these Question Mid Men's Basketball Shoes sugared up with Candy Land accents. Their B-ball roots honor legendary scoring champion Allen Iverson. Then they get a little sweet with a quilted ice cream cone design that wraps around the ankle."
   },
   {
@@ -79,7 +79,7 @@
     "brand": "Nike",
     "image":  "./assets/images/shoe2.jpg",
     "color": "Black",
-    "price": 7000,
+    "price": 70,
     "description":  "Revisit your childhood in these Question Mid Men's Basketball Shoes sugared up with Candy Land accents. Their B-ball roots honor legendary scoring champion Allen Iverson. Then they get a little sweet with a quilted ice cream cone design that wraps around the ankle."
   }
 ]
