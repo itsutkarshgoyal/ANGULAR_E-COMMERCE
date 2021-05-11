@@ -28,6 +28,8 @@ Application  has following features.
 
 ### Web Application
 ---
+
+![](src/assets/images/home.png)
 1. **Search Bar**: Using Search bar you can filter the products displayed.
 
 2. **Language Selection**: Adding internationalisation on this application the second button from the top right of the page have the capability to change the labels and genral titles in two different languages (English,French).
@@ -38,13 +40,16 @@ Application  has following features.
 
 #### _Product Detail Page_
   ---
+  ![](src/assets/images/productDetail.png)
   User can see the product detials such as price, color, description and authenticated user can add product to cart
 
 #### _User Authentication_
  --- 
+  ![](src/assets/images/login.png)
   For adding the product and for checkout user has to login first, using this page user can login into the application and redirected to home page.
 
 #### _Cart Screen_
+ ![](src/assets/images/cart.png)
   Only Authenticated user can view this page , using this page user can see the price , subtotal and quantity of product selected. He can also increase the quantity to see the updated price.
 
 #### _Translations_
@@ -61,5 +66,6 @@ This application is made purely on  Angular 11 so a temporary memory objects lis
 
 ### Unit Testing
 ---
+ ![](src/assets/images/unitTesting.PNG)
 Unit test cases for Header Component and Product Service have been written and testes thoroghly. 
 `Basic Component creation test case is implemented for all the compoennets`  
