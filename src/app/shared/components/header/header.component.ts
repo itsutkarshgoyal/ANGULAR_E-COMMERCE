@@ -4,6 +4,7 @@ import {AuthService} from 'src/app/core/services/auth.service'
 import {TranslateService} from '@ngx-translate/core';
 
 import { Router } from "@angular/router";
+import { stringify } from '@angular/compiler/src/util';
 
 
 @Component({
@@ -16,10 +17,10 @@ export class HeaderComponent implements OnInit {
   public cart_count:number = 0;
   constructor(private _productService : ProductService, public router: Router,public _authService : AuthService, public translate: TranslateService) {
     translate.addLangs(['en', 'fr']);
-    translate.setDefaultLang('en');
-
     const browserLang = translate.getBrowserLang();
-    translate.use(browserLang.match(/en|fr/) ? browserLang : 'en');
+    const preferedLanguage = this.getCulture()?this.getCulture():null;
+    translate.setDefaultLang(preferedLanguage?preferedLanguage:'en');
+    translate.use(preferedLanguage?preferedLanguage:browserLang.match(/en|fr/) ? browserLang : 'en');
 
    }
 
@@ -41,5 +42,16 @@ export class HeaderComponent implements OnInit {
     this._authService.logout();
     this.router.navigate(["login"]);
     return false;
+  }
+
+  setCulture(language:string)
+  {
+    localStorage.setItem("preferedLanguage",language);
+    this.translate.use(language);
+  }
+
+  getCulture()
+  {
+    return localStorage.getItem("preferedLanguage");
   }
 }

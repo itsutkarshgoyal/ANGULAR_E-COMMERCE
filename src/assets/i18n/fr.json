@@ -10,7 +10,9 @@
   },
   "FOOTER":
   {
-    "COPYRIGHT":"Droits d'auteur 2021"
+    "COPYRIGHT":"Droits d'auteur @2021",
+    "CREATED": "Créé par: Utkarsh Goyal",
+    "SAMPLE":"Les produits présentés ici sont factices et à des fins éducatives."
   },
   "PRODUCT":
   {
@@ -30,23 +32,23 @@
   },
   "USER":
   {
-    "FULL_NAME":"Full name",
+    "FULL_NAME":"Nom et prénom",
     "EMAIL":"Email",
-    "OPTIONAL":"(Optional)",
-    "ADDRESS":"Address",
-    "ADDRESS_DETAIL":"Address Details",
-    "COUNTRY":"Country",
-    "STATE":"State",
+    "OPTIONAL":"(Optionnelle)",
+    "ADDRESS":"Adresse",
+    "ADDRESS_DETAIL":"Détails de l'adresse",
+    "COUNTRY":"Pays",
+    "STATE":"État",
     "ZIP":"Zip",
-    "CONTINUE":"Continue Checkout"
+    "CONTINUE":"Poursuivre la commande"
   },
   "VALIDATION":
   {
-    "NAME":"Please enter your name.",
-    "NAME_LENGTH":"Name must be longer than 5 characters.",
-    "ADDRESS":" Please enter your shipping address.",
-    "COUNTRY":"Please select a valid country.",
-    "STATE":"Please provide a valid state.",
-    "ZIP":" Zip code required."
+    "NAME":"S'il vous plaît entrez votre nom.",
+    "NAME_LENGTH":"Le nom doit comporter plus de 5 caractères.",
+    "ADDRESS":"Prière d'indiquer ton adresse d'expédition.",
+    "COUNTRY":"Veuillez sélectionner un pays valide.",
+    "STATE":"Veuillez fournir un état valide.",
+    "ZIP":"Code postal requis."
   }
 }

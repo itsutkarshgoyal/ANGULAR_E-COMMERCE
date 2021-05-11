@@ -18,7 +18,7 @@ export class CheckoutComponent implements OnInit {
   state: String;
   zip: String;
   constructor(private router: Router, private toastr: ToastrService, public translate: TranslateService,public _auth_service: AuthService) {
-    translate.currentLang = !translate.currentLang? 'en': translate.currentLang;
+    translate.currentLang = localStorage.getItem("preferedLanguage")? localStorage.getItem("preferedLanguage"):'en';
     translate.setDefaultLang(translate.currentLang);
   }
 

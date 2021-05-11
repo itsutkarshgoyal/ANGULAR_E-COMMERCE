@@ -22,7 +22,7 @@ export class CartComponent implements OnInit {
   public loggedInUser;
 
   constructor(private _productService : ProductService, private router: Router,public translate: TranslateService, public _auth_service: AuthService) {
-    translate.currentLang = !translate.currentLang? 'en': translate.currentLang;
+    translate.currentLang = localStorage.getItem("preferedLanguage")? localStorage.getItem("preferedLanguage"):'en';
     translate.setDefaultLang(translate.currentLang);
    }
 

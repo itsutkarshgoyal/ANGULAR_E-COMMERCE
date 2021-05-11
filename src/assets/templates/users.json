@@ -19,9 +19,9 @@
   },
   {
     "id": "3",
-    "name": "Riya",
+    "name": "utkarsh",
     "password": "Passw0rd",
-    "email": "riya@gmail.com",
+    "email": "utkarsh@gmail.com",
     "mobile": "9898543210",
     "address": "plot 123, bikaner",
     "image": ""
@@ -31,6 +31,15 @@
     "name": "Jack",
     "password": "Passw0rd",
     "email": "jack@gmail.com",
+    "mobile": "9887543210",
+    "address": "whitefield 123 , atlanta",
+    "image": ""
+  },
+  {
+    "id": "5",
+    "name": "Augustin",
+    "password": "Passw0rd",
+    "email": "augustin@gmail.com",
     "mobile": "9887543210",
     "address": "whitefield 123 , atlanta",
     "image": ""

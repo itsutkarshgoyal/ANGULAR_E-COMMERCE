@@ -2,7 +2,7 @@
   "HEADER":
   {
     "SUPPORT_EMAIL": "Support@Anytime.com",
-    "SERVICES": " Services Avaliable across multiple regions.",
+    "SERVICES": "Services Avaliable across multiple regions.",
     "FASHION_STORE": "Fashion Store",
     "LOGIN":"Log In",
     "LOG_OUT":"Log Out",
@@ -10,7 +10,9 @@
   },
   "FOOTER":
   {
-    "COPYRIGHT":"Copyright 2021"
+    "COPYRIGHT":"Copyright @2021",
+    "CREATED": "Created By: Utkarsh Goyal",
+    "SAMPLE":"Products displayed here are dummy and for educational purpose."
   },
   "PRODUCT":
   {

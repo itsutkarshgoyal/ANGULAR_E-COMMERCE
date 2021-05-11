@@ -37,13 +37,13 @@
           <a class="btn btn-link" [routerLink]="['/cart']"><i class="fas fa-shopping-cart"><span class="badge badge-info">{{cart_count}}</span></i></a>
         </li>
         <li class="nav-item">
-            <select class = "btn btn-info dropdown-toggle" #langSelect (change)="translate.use(langSelect.value)">
-              <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>
+            <select id= "prefered-language" class = "btn" #langSelect (change)="setCulture(langSelect.value)">
+              <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang == translate.currentLang ">{{ lang }}</option>
             </select>
         </li>
         <li class="nav-item ml-md-3">
-          <a class="btn btn-primary" *ngIf="!_authService.loggedin()" (click) = "onLoginClick()"><i class="fas fa-sign-in-alt"></i>{{ 'HEADER.LOGIN' | translate }} </a>
-          <a class="btn btn-primary" *ngIf="_authService.loggedin()" (click) = "onLogoutClick()" style="min-width: 108%;"><i class="fas fa-sign-in-alt"></i> {{ 'HEADER.LOG_OUT' | translate }} </a>
+          <a class="btn" *ngIf="!_authService.loggedin()" (click) = "onLoginClick()"><i class="fas fa-sign-in-alt"></i>{{ 'HEADER.LOGIN' | translate }} </a>
+          <a class="btn" *ngIf="_authService.loggedin()" (click) = "onLogoutClick()" style="min-width: 108%;"><i class="fas fa-sign-in-alt"></i> {{ 'HEADER.LOG_OUT' | translate }} </a>
         </li>
       </ul>
     </div>

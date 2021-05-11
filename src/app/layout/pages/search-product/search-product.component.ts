@@ -36,10 +36,10 @@ export class SearchProductComponent implements OnInit {
   // Search the product.
   searchProduct(filterBy: string) {
     filterBy = filterBy.toLowerCase();
-    
+    this.products = JSON.parse(JSON.stringify(this.filterProduct));
+
     if(filterBy === "")
     {
-     this.products = JSON.parse(JSON.stringify(this.filterProduct));
      return
     }
 

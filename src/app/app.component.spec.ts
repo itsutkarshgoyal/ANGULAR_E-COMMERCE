@@ -20,9 +20,9 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'nagp-angular-assignment'`, () => {
+  it(`should have as title 'Fashion Store'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('nagp-angular-assignment');
+    expect(app.title).toEqual('Fashion Store');
   });
 });
